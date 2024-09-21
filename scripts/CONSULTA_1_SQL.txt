@@ -1,0 +1,5 @@
+1.	Listar todos los empleados con sus respectivos departamentos:
+
+SELECT e.nombre AS nombre_empleado, d.nombre_departamento
+FROM empleados e
+JOIN departamentos d ON e.id_departamento = d.id_departamento;
