@@ -1,0 +1,3 @@
+2.	Eliminar la tabla asignaciones_proyectos: Esta consulta elimina completamente la tabla asignaciones_proyectos de la base de datos.
+
+DROP TABLE asignaciones_proyectos;

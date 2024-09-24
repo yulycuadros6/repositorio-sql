@@ -1,0 +1,4 @@
+1.	Agregar una nueva columna a la tabla empleados: Esta consulta agrega una nueva columna llamada email a la tabla empleados.
+
+ALTER TABLE empleados
+ADD email VARCHAR(100);
