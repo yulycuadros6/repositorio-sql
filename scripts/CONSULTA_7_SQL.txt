@@ -1,0 +1,6 @@
+7.	Listar proyectos y la cantidad de empleados asignados a cada uno:
+
+SELECT p.nombre_proyecto, COUNT(a.id_empleado) AS num_asignaciones
+FROM proyectos p
+LEFT JOIN asignaciones_proyectos a ON p.id_proyecto = a.id_proyecto
+GROUP BY p.nombre_proyecto;
