@@ -1,0 +1,6 @@
+6.	Contar el número de empleados en cada departamento:
+
+SELECT d.nombre_departamento, COUNT(e.id_empleado) AS num_empleados
+FROM departamentos d
+LEFT JOIN empleados e ON d.id_departamento = e.id_departamento
+GROUP BY d.nombre_departamento;
