@@ -1,0 +1,5 @@
+5.	Obtener los proyectos con un presupuesto superior a 80,000:
+
+SELECT nombre_proyecto, presupuesto
+FROM proyectos
+WHERE presupuesto > 80000;
