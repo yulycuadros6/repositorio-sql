@@ -1,0 +1,4 @@
+2.	Eliminar una asignación de proyecto: Esta consulta elimina una asignación de proyecto de un empleado (por ejemplo, la asignación con id_asignacion = 2):
+
+DELETE FROM asignaciones_proyectos
+WHERE id_asignacion = 2;

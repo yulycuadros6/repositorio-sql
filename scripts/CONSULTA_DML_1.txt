@@ -1,0 +1,5 @@
+1.	Actualizar el salario de un empleado: Esta consulta actualiza el salario de un empleado específico (por ejemplo, el empleado con id_empleado = 3):
+
+UPDATE empleados
+SET salario = 4800
+WHERE id_empleado = 3;
