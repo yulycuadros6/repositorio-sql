@@ -1,0 +1,7 @@
+3.	Número de proyectos por departamento:
+
+SELECT d.nombre_departamento, COUNT(DISTINCT a.id_proyecto) AS num_proyectos
+FROM departamentos d
+LEFT JOIN empleados e ON d.id_departamento = e.id_departamento
+LEFT JOIN asignaciones_proyectos a ON e.id_empleado = a.id_empleado
+GROUP BY d.nombre_departamento;

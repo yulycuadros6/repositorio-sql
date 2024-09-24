@@ -1,0 +1,6 @@
+2.	Proyectos que no tienen empleados asignados:
+
+SELECT p.nombre_proyecto
+FROM proyectos p
+LEFT JOIN asignaciones_proyectos a ON p.id_proyecto = a.id_proyecto
+WHERE a.id_asignacion IS NULL;

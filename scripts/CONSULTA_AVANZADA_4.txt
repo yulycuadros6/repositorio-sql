@@ -1,0 +1,7 @@
+4.	Empleados que han sido asignados a más de un proyecto:
+
+SELECT e.nombre, COUNT(a.id_proyecto) AS num_proyectos
+FROM empleados e
+JOIN asignaciones_proyectos a ON e.id_empleado = a.id_empleado
+GROUP BY e.id_empleado
+HAVING COUNT(a.id_proyecto) > 1;
