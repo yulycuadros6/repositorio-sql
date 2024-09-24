@@ -1,0 +1,3 @@
+2.	Obtener la lista de proyectos y sus presupuestos:
+SELECT nombre_proyecto, presupuesto
+FROM proyectos;
