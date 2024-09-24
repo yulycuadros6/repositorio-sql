@@ -1,0 +1,7 @@
+3.	Ver empleados asignados a un proyecto específico (por ejemplo, 'Implementación ERP'):
+
+SELECT e.nombre AS nombre_empleado, a.fecha_asignacion
+FROM asignaciones_proyectos a
+INNER JOIN empleados e ON a.id_empleado = e.id_empleado
+INNER JOIN proyectos p ON a.id_proyecto = p.id_proyecto
+WHERE p.nombre_proyecto = 'Implementación ERP';
