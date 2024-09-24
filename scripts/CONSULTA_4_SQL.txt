@@ -1,0 +1,6 @@
+4.	Calcular el salario promedio por departamento:
+
+SELECT d.nombre_departamento, AVG(e.salario) AS salario_promedio
+FROM empleados e
+INNER JOIN departamentos d ON e.id_departamento = d.id_departamento
+GROUP BY d.nombre_departamento;
